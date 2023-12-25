@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Lavishly+Yours&family=Roboto+Mono&display=swap');
+
+body{
+    background: linear-gradient(#6096B4, #93BFCF, #BDCDD6);
+    font-family: 'Chakra Petch', sans-serif !important;
+}
+.tamsayfa{
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: rgb(31, 30, 30) solid 3px;
+    border-radius: 25px;
+    background-color: #fff6e7;
+    box-shadow: 10px 10px 20px rgb(31, 30, 30);
+    animation: gradient-animation 3s ease-in-out infinite;
+        }
+            @keyframes gradient-animation {
+                0% {background-position: 0% 50% 50%;}
+                25% {background-position: 50% 50% 50%;}
+                50% {background-position: 100% 50% 0%;}
+                75% {background-position: 50% 50% 50%;}
+                100% {background-position: 0% 50% 50%;}
+            }
+nav, nav div, nav ul{    
+    background-color: #fff6e7 !important;  
+}
+
+nav{
+    padding: 0 !important;
+}
+
+.navbargenel{
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.navlist{
+    padding-right: 10px;
+}
+
+.sosyalmedya{
+    background-color: #BDCDD6 !important;
+    border: rgb(66, 59, 59) solid 1px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(31, 30, 30);
+}
+
+.sosyalmedya .fa-brands, .fa-envelope{
+    color: black;
+    font-size: 2rem;
+    width: 3rem;
+    margin-left: 2.3rem;
+    text-align: center;
+}
+
+.ben{
+    font-size: 2.7rem;
+    font-weight: 600;
+}     
+
+.isimsoyisim h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation: isim 3s infinite;
+    font-size: 3.2rem;
+    color: rgba(0, 0, 0, 0.651);
+    font-family: 'Lavishly Yours', cursive;
+
+}
+@keyframes isim{
+    0%{font-size: 3.2rem;}
+    50%{font-size: 3.5rem;}
+    100%{font-size: 3.2rem;}
+}
+
+.iletisimbutonu{
+    width: 11.5rem;
+    height: 2rem;
+    padding: 0;
+}
+
+.iletisimbutonu:hover{
+    background-color: #BDCDD6;
+    color: black;
+    border-color: black;
+}
+#hero .lead{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    animation: fade 3s infinite;
+}
+@keyframes fade{
+    0%{opacity: 1;}
+    45%{opacity: 1;}
+    50%{opacity: 0;}
+    65%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#hakkimda, #yetenekler, #iletisim{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.hakkimdaParagraf{
+    width: 72%;
+    text-align: justify;
+    height: 400px;}
+
+.ahmet2{    
+    width: 25%;
+    height: 400px;
+}
+
+@media screen and (max-width: 940px) {
+    .hakkimdaParagraf{
+        width: 100%;
+        overflow:auto;
+
+    }
+    .ahmet2{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.aciklama{
+    width: 50%;
+    text-align: justify;
+    height: 400px;}
+
+.bars{    
+    width: 45%;
+    height: 400px;
+}
+
+@media screen and (max-width: 940px) {
+    .aciklama{
+        width: 100%;
+        overflow:auto;
+        text-align: justify;
+    }
+    .bars{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+    #portfolyo{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    }
+
+.baslik{
+    width: 100%;
+    text-align: center;
+}
+    
+    /* soltaraf */
+
+.column-yazi1{
+    width: 22%;
+    text-align: end;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.column-resim1{    
+    width: 22%;
+    height: 250px;
+    text-align: start;
+    margin-right: 0px;
+}
+
+.column-resim1 img{
+    border: 2px #6096B4 solid;
+    border-radius: 25px;
+    text-align: start;
+    transition: 0.6s;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px #93BFCF;
+}
+
+/* sağtaraf */
+
+.column-yazi2{
+    width: 22%;
+    text-align: end;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.column-resim2{    
+    width: 22%;
+    height: 250px;
+    text-align: end;
+    margin-left: 0px;
+}
+
+.column-resim2 img{
+    border: 2px #6096B4 solid;
+    border-radius: 25px;
+    text-align: end;
+    transition: 0.6s;
+    overflow: hidden;
+    box-shadow: -5px 5px 20px #93BFCF;
+}
+
+.column-resim1 img:hover {
+    scale:1.05
+}
+
+.column-resim2 img:hover{
+    scale:1.05
+}
+
+.bosluk{
+    width: 0.5%;
+    background-color: #6096B4;
+    margin: 0;
+    padding: 0;
+    height: 230px;
+    
+}
+
+
+.incelebuton{
+    width: 8.5rem;
+    height: 2rem;
+    padding: 0;
+}
+
+.incelebuton:hover{
+    background-color: #BDCDD6;
+    color: black;
+    border-color: black;
+}
+
+@media screen and (max-width: 940px) {
+    .column-yazi1, .column-yazi2{
+        width: 100%;
+        text-align: justify;
+        height: 100px;
+    }
+    .column-resim1, .column-resim2{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .bosluk{
+        width: 0%;
+    }
+    }
+
+@media screen and (min-width: 940px) and (max-width: 1024px) {
+    .column-yazi1, .column-yazi2{
+        width: 18%;
+        text-align: justify;
+        overflow:auto;
+    }
+    .column-resim1, .column-resim2{
+        width: 18%;
+        text-align: center;
+    }
+    .column-resim2{
+        margin-right: 20px;
+    }
+    .column-resim1 img, .column-resim2 img{
+        width: 150px;
+    }
+    .bosluk{
+        width: 0.5%;
+        text-align: center;
+    }
+}
+
+.merhaba{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.linkmailto{
+    text-decoration: none;
+    transition: 0.3s;
+    color: black;
+    font-weight: bolder;
+}
+
+.linkmailto:hover{
+    color:#2881b1;
+}
+
+.form{    
+    width: 45%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formgonder{
+    padding: 20px;
+    border: 4px #6096B4 double;
+    border-radius: 20px;
+}
+
+.formgonder input, textarea{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.gonderbuton{
+    width: 8rem!important;
+    height: 2rem!important;
+    padding: 0!important;
+    
+}
+
+.gonderbuton:hover{
+    background-color: #BDCDD6;
+    color: black;
+    border-color: black;
+}
+
+.kutu{
+    border: darkgrey 1.5px solid;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px grey;
+    height: 2.4rem;
+}
+
+.text{
+    height: 7rem;
+}
+
+@media screen and (max-width: 940px) {
+    .merhaba{
+        width: 100%;
+        overflow:auto;
+        text-align: justify;
+    }
+    .form{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .merhaba{
+        width: 100%;
+        overflow:auto;
+        text-align: justify;
+        height: 200px;
+        justify-content: end;
+    }
+    .form{
+        width: 100%;
+        margin: auto;
+        height: 500px;
+    }
+}
+
+#footer{
+    width: 90%;
+    margin: auto;
+}
+
+.logo-f{
+    transition: 0.4s;
+}
+
+.logo-f:hover{
+    scale: 1.2;
+}
