@@ -329,6 +329,9 @@ nav{
     padding: 20px;
     border: 4px #6096B4 double;
     border-radius: 20px;
+    background-color: #BDCDD6;
+    background: linear-gradient(to right, #6096B4, #93BFCF, #BDCDD6);
+    animation: gradient-animation 1s ease-in-out infinite;
 }
 
 .formgonder input, textarea{
@@ -340,11 +343,12 @@ nav{
     width: 8rem!important;
     height: 2rem!important;
     padding: 0!important;
+    background-color: #fff6e7!important;
     
 }
 
 .gonderbuton:hover{
-    background-color: #BDCDD6;
+    background-color: #BDCDD6!important;
     color: black;
     border-color: black;
 }
@@ -354,6 +358,7 @@ nav{
     border-radius: 7px;
     box-shadow: 5px 5px 5px grey;
     height: 2.4rem;
+    background-color: #fff6e7;
 }
 
 .text{
