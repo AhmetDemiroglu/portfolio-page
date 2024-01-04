@@ -3,16 +3,6 @@
 body{
     background: linear-gradient(#6096B4, #93BFCF, #BDCDD6);
     font-family: 'Chakra Petch', sans-serif !important;
-}
-.tamsayfa{
-    width: 85%;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border: rgb(31, 30, 30) solid 3px;
-    border-radius: 25px;
-    background-color: #fff6e7;
-    box-shadow: 10px 10px 20px rgb(31, 30, 30);
     animation: gradient-animation 3s ease-in-out infinite;
         }
             @keyframes gradient-animation {
@@ -22,6 +12,16 @@ body{
                 75% {background-position: 50% 50% 50%;}
                 100% {background-position: 0% 50% 50%;}
             }
+.tamsayfa{
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: rgb(31, 30, 30) solid 3px;
+    border-radius: 25px;
+    background-color: #fff6e7;
+    box-shadow: 10px 10px 20px rgb(31, 30, 30);
+}
 nav, nav div, nav ul{    
     background-color: #fff6e7 !important;  
 }
