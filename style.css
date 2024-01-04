@@ -109,6 +109,9 @@ nav{
     margin-bottom: 100px;
 }
 
+#iletisim{
+    margin-top: 100px;
+}
 .hakkimdaParagraf{
     width: 72%;
     text-align: justify;
@@ -163,7 +166,8 @@ nav{
     overflow: hidden;
     width: 90%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding-top: 20px;
     }
 
 .baslik{
@@ -262,7 +266,7 @@ nav{
     .column-yazi1, .column-yazi2{
         width: 100%;
         text-align: justify;
-        height: 100px;
+        height: 120px;
     }
     .column-resim1, .column-resim2{
         width: 100%;
