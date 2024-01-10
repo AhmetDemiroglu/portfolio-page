@@ -39,6 +39,14 @@ nav{
     padding-right: 10px;
 }
 
+.sosyalmedya .fa-brands, .fa-envelope{
+    color: black;
+    font-size: 2rem;
+    width: 3rem;
+    margin-left: 2.3rem;
+    text-align: center;
+}
+
 .sosyalmedya{
     background-color: #BDCDD6 !important;
     border: rgb(66, 59, 59) solid 1px;
@@ -46,12 +54,10 @@ nav{
     box-shadow: 5px 5px 10px rgb(31, 30, 30);
 }
 
-.sosyalmedya .fa-brands, .fa-envelope{
-    color: black;
-    font-size: 2rem;
-    width: 3rem;
-    margin-left: 2.3rem;
-    text-align: center;
+@media screen and (max-width: 940px) {
+    .sosyalmedya{
+        width: 20%;
+    }  
 }
 
 .ben{
@@ -103,31 +109,37 @@ nav{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    overflow: hidden;
+    overflow: visible;
     width: 90%;
     margin: auto;
     margin-bottom: 100px;
 }
 
+#hakkimda {
+    margin-top: 0px;
+}
+
 #iletisim{
     margin-top: 100px;
 }
+
 .hakkimdaParagraf{
     width: 72%;
     text-align: justify;
-    height: 400px;}
+    height: 450px;}
 
 .ahmet2{    
     width: 25%;
-    height: 400px;
+    object-fit: cover;
+    height: 450px;
 }
 
 @media screen and (max-width: 940px) {
     .hakkimdaParagraf{
         width: 100%;
         overflow:auto;
-
     }
+    
     .ahmet2{
         width: 100%;
         margin: auto;
@@ -246,6 +258,7 @@ nav{
     margin: 0;
     padding: 0;
     height: 230px;
+    border-radius: 25px;
     
 }
 
@@ -351,6 +364,16 @@ nav{
     
 }
 
+#dinle, #oku, #bitir{
+    width: 1.5rem!important;
+    height: 1.5rem!important;
+    padding: 0!important;
+    background-color: #fff6e7!important;
+    border-radius: 50%; 
+    float: right; 
+    margin: 2px;  
+}
+
 .gonderbuton:hover{
     background-color: #BDCDD6!important;
     color: black;
@@ -407,4 +430,55 @@ nav{
 
 .logo-f:hover{
     scale: 1.2;
+}
+
+
+#parallax {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parallax::before{
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+}
+
+#pLeft, #pRight{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#pLeft {
+    height: 122px;
+    z-index: 1;
+    margin-left: 150px;
+}
+
+#pRight {
+    height: 100px;
+    margin-left: 150px;
+}
+
+#portfolyom{
+    position: absolute;
+    color: black;
+    margin-bottom: 80px;
+    bottom: 0;
+    animation: fades 3s ease-in-out;
+}
+@keyframes fades{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
 }
