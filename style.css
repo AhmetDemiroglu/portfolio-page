@@ -435,7 +435,7 @@ nav{
 
 #parallax {
     position: relative;
-    height: 150px;
+    height: 170px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -457,23 +457,26 @@ nav{
     left: 0;
     object-fit: cover;
     pointer-events: none;
+    filter: drop-shadow(0 0 0.75rem #6096B4);
 }
 
 #pLeft {
     height: 122px;
     z-index: 1;
     margin-left: 150px;
+    margin-top: 20px;
 }
 
 #pRight {
     height: 100px;
     margin-left: 150px;
+    margin-top: 20px;
 }
 
 #portfolyom{
     position: absolute;
     color: black;
-    margin-bottom: 80px;
+    margin-bottom: 82px;
     bottom: 0;
     animation: fades 3s ease-in-out;
 }
