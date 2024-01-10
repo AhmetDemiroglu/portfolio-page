@@ -477,11 +477,31 @@ nav{
     position: absolute;
     color: black;
     margin-bottom: 82px;
-    bottom: 0;
-    animation: fades 3s ease-in-out;
 }
-@keyframes fades{
-    0%{opacity: 0;}
-    50%{opacity: 0.5;}
-    100%{opacity: 1;}
+
+@media screen and (max-width: 940px) {
+    #parallax {
+        position: relative;
+        height: 90px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pLeft {
+        height: 30px;
+        z-index: 1;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    
+    #pRight {
+        height: 25px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }  
+
+    #portfolyom{
+        margin-bottom: 25px;
+    }
 }
