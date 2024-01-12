@@ -29,7 +29,7 @@ const pLeft = document.querySelector("#pLeft");
     oku.addEventListener("click", () => {
         let text = subject.value;
         let uttr = new SpeechSynthesisUtterance(text);
-        uttr.lang = "tr";
+        uttr.lang = "tr-Tr";
         speechSynthesis.speak(uttr);
       });
     
