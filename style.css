@@ -281,13 +281,21 @@ nav{
         text-align: justify;
         height: 120px;
     }
+    .column-yazi1{
+        margin-top: 50px;
+    }
+    .column-yazi2{
+        margin-bottom: 50px;
+    }
     .column-resim1, .column-resim2{
         width: 100%;
         margin: auto;
         text-align: center;
     }
+   
     .bosluk{
         width: 0%;
+        height: 75px;
     }
     }
 
@@ -347,6 +355,7 @@ nav{
     border: 4px #6096B4 double;
     border-radius: 20px;
     background-color: #BDCDD6;
+    z-index: 1;
     background: linear-gradient(to right, #6096B4, #93BFCF, #BDCDD6);
     animation: gradient-animation 1s ease-in-out infinite;
 }
@@ -372,6 +381,7 @@ nav{
     border-radius: 50%; 
     float: right; 
     margin: 2px;  
+
 }
 
 .gonderbuton:hover{
@@ -422,6 +432,7 @@ nav{
 #footer{
     width: 90%;
     margin: auto;
+    z-index: -1;
 }
 
 .logo-f{
@@ -482,7 +493,7 @@ nav{
 @media screen and (max-width: 940px) {
     #parallax {
         position: relative;
-        height: 90px;
+        height: 120px;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -502,6 +513,6 @@ nav{
     }  
 
     #portfolyom{
-        margin-bottom: 25px;
+        margin-bottom: 55px;
     }
 }

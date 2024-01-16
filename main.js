@@ -29,7 +29,28 @@ const pLeft = document.querySelector("#pLeft");
     oku.addEventListener("click", () => {
         let text = subject.value;
         let uttr = new SpeechSynthesisUtterance(text);
-        uttr.lang = "tr-Tr";
+        uttr.lang = "tr";
         speechSynthesis.speak(uttr);
       });
     
+
+      const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
+      document.querySelector(".leadp").onmouseleave = (event) => {
+        let repetition = 0;
+        let interval;
+        interval = setInterval(() => {
+          event.target.innerText = event.target.innerText
+            .split("")
+            .map((letter, index) => {
+              if (index < repetition) {
+                return event.target.dataset.value[index];
+              }
+              return letters[Math.floor(Math.random() * 29)];
+            })
+            .join("");
+    
+          if (repetition >= event.target.dataset.value.length)
+            clearInterval(interval);
+          repetition += 1 / 3;
+        }, 50);
+      };

@@ -131,7 +131,7 @@
 <!-- 1.SATIR -->
           <div id="portfolyo">
             <div class="baslik">
-            <h2>Projeler</h2>
+            <h2 class="leadp" data-value="Projeler">Projeler</h2>
             </div>
             <div class="column-yazi1">
               <h4>About Me Web Sayfası</h4>   
@@ -230,27 +230,5 @@
 AOS.init();
 </script>
 
-<!-- <script>
-  const letters = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZ";
-  document.querySelector(".lead").onclick = (event) => {
-    let repetition = 0;
-    let interval;
-    interval = setInterval(() => {
-      event.target.innerText = event.target.innerText
-        .split("")
-        .map((letter, index) => {
-          if (index < repetition) {
-            return event.target.dataset.value[index];
-          }
-          return letters[Math.floor(Math.random() * 29)];
-        })
-        .join("");
-
-      if (repetition >= event.target.dataset.value.length)
-        clearInterval(interval);
-      repetition += 1 / 3;
-    }, 30);
-  };
-    </script> -->
 </body>
 </html>
